@@ -4,7 +4,7 @@
   const carRoutes = require('./routes/carRoutes');
   const cors = require('cors');
   const path = require('path');
-  const paymentRoutes = require('./config/payment');
+  //const paymentRoutes = require('./config/payment');
   const purchaseRoutes = require('./routes/purchaseroute');
   dotenv.config();
   const app = express();
@@ -28,7 +28,7 @@
     console.error(err.stack);
     res.status(500).send('Something broke!');
   });
-  app.use('/api', paymentRoutes);
+  //app.use('/api', paymentRoutes);
 
   // Start the server
   const PORT = process.env.PORT || 5000;
